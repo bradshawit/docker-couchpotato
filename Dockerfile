@@ -15,6 +15,7 @@ VOLUME  ["/data/downloads"]
 VOLUME  ["/data/movies"]
 VOLUME  ["/data/couchpotato"]
 
+
 EXPOSE 5050
 
 CMD ["/launch.sh"]
