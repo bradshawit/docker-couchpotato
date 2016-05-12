@@ -2,5 +2,5 @@
 
 set -e
 
-python /opt/couchpotato/CouchPotatoServer/CouchPotato.py &
+python /opt/couchpotato/CouchPotato.py &
 wait
