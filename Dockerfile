@@ -5,6 +5,7 @@ RUN apt-get update -q && \
     apt-get install -qy git-core && \
     apt-get install -qy python && \
     apt-get install -qy python-pip python-dev libssl-dev && \ 
+    apt-get install -qy wget && \
     apt-get clean
   
 RUN git clone https://github.com/CouchPotato/CouchPotatoServer.git /opt/couchpotato
