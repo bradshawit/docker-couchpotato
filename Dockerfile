@@ -3,10 +3,12 @@ FROM ubuntu:xenial
 RUN apt-get update -q && \
     apt-get upgrade -qy && \
     apt-get install -qy git-core && \
-    apt-get install -qy python && \
-    apt-get install -qy python-pip python-dev libssl-dev && \ 
+    apt-get install -qy libxslt1-dev libffi-dev libffi6 libpython-dev libssl-dev python2.7 python-cherrypy python-lxml python-pip python2.7-dev && \
     apt-get install -qy wget && \
     apt-get clean
+    
+RUN pip install pip-review && \
+    pip install -U pip pyopenssl ndg-httpsclient virtualenv
   
 RUN git clone https://github.com/CouchPotato/CouchPotatoServer.git /opt/couchpotato
 
